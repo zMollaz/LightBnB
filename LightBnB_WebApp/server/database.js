@@ -158,6 +158,7 @@ const addProperty = function (property) {
   VALUES 
   ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
   RETURNING *;`;
+  
   const queryParams = [property.owner_id, property.title,
   property.description, property.thumbnail_photo_url,
   property.cover_photo_url, property.cost_per_night,
